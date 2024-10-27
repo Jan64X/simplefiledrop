@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Drop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>File Drop</h1>
+    <div class="drop-zone" id="dropZone">
+        <p>Drag and drop files here, click to select, or paste (Ctrl+V)</p>
+        <input type="file" id="fileInput" style="display: none">
+    </div>
+    <div id="fileLink"></div>
+    <footer class="footer">
+        This filedrop is FOSS software licensed under the GPL, check out the source <a href="https://github.com/jan64x/simplefiledrop" target="_blank">here</a>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
